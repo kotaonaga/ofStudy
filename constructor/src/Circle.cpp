@@ -9,12 +9,12 @@
 
 //コンストラクタを2つ作れることがわかった
 Circle::Circle(){
-    
+    x = 12;
 }
 
 
-Circle::Circle(int _x) :x(_x){
-//    x = _x;
+Circle::Circle(int _x){
+    x = _x;
 }
 
 int Circle::getX(){

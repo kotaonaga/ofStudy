@@ -23,6 +23,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		
 //    Circle c(22);
-    Circle c(22);
+    
     Circle b;
+//    Circle c(22);
 };
