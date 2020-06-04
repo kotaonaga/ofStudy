@@ -2,6 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofSetWindowShape(600, 600);
+    
     ofSetBackgroundColor(0);
     positions.resize(5);
     initTime = 0;
@@ -33,12 +35,16 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofSetColor(0);
+    ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
+    
     ofSetColor(255);
     auto h = 20;
     auto y = 20;
     auto i = 0;
     for(auto & x: positions){
         ofDrawRectangle(0, y, x, h);
+        ofDrawCircle(x, 300, 20);
         ofDrawBitmapString(easingNames[i], 10, y+h*1.6);
         y+=h*2;
         i++;
@@ -46,6 +52,7 @@ void ofApp::draw(){
 
     ofSetColor(200);
     ofDrawLine(endPosition, 0, endPosition, ofGetHeight());
+    
 }
 
 //--------------------------------------------------------------
