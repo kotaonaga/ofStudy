@@ -152,7 +152,6 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-    //this is test
     // Create a new file. Empty until saved to.
     csv.createFile("createfile.csv");
 }
